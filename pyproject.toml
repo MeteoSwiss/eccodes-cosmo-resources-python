@@ -1,0 +1,34 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "eccodes-cosmo-resources-python"
+dynamic = ["version"]
+description = ''
+readme = "README.md"
+requires-python = ">=3.9"
+license = "BSD-3"
+keywords = []
+authors = [
+  { name = "Christian Kanesan", email = "christian.kanesan@meteoswiss.ch" },
+]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: Implementation :: CPython",
+  "Programming Language :: Python :: Implementation :: PyPy",
+]
+dependencies = []
+
+[project.urls]
+Documentation = "https://github.com/Meteoswiss/eccodes-cosmo-resources-python#readme"
+Issues = "https://github.com/Meteoswiss/eccodes-cosmo-resources-python/issues"
+Source = "https://github.com/Meteoswiss/eccodes-cosmo-resources-python"
+
+[tool.hatch.version]
+path = "src/eccodes_cosmo_resources/__about__.py"
