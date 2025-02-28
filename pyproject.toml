@@ -35,5 +35,7 @@ path = "src/eccodes_cosmo_resources/__about__.py"
 
 [tool.hatch.build]
 include = [
-  "definitions/"
+  "src/eccodes_cosmo_resources/*.py",
+  "definitions/",
 ]
+sources = ["src"]
