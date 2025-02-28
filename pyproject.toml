@@ -8,7 +8,7 @@ dynamic = ["version"]
 description = ''
 readme = "README.md"
 requires-python = ">=3.9"
-license = "BSD-3"
+license = "BSD-3-Clause"
 keywords = []
 authors = [
   { name = "Christian Kanesan", email = "christian.kanesan@meteoswiss.ch" },
@@ -26,9 +26,14 @@ classifiers = [
 dependencies = []
 
 [project.urls]
-Documentation = "https://github.com/Meteoswiss/eccodes-cosmo-resources-python#readme"
-Issues = "https://github.com/Meteoswiss/eccodes-cosmo-resources-python/issues"
-Source = "https://github.com/Meteoswiss/eccodes-cosmo-resources-python"
+Documentation = "https://github.com/MeteoSwiss/eccodes-cosmo-resources-python#readme"
+Issues = "https://github.com/MeteoSwiss/eccodes-cosmo-resources-python/issues"
+Source = "https://github.com/MeteoSwiss/eccodes-cosmo-resources-python"
 
 [tool.hatch.version]
 path = "src/eccodes_cosmo_resources/__about__.py"
+
+[tool.hatch.build]
+include = [
+  "definitions/"
+]

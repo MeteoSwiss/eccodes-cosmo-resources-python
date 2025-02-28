@@ -1,0 +1,3 @@
+[submodule "src/eccodes_cosmo_resources/eccodes-cosmo-resources"]
+	path = src/eccodes_cosmo_resources/eccodes-cosmo-resources
+	url = https://github.com/COSMO-ORG/eccodes-cosmo-resources
