@@ -33,9 +33,5 @@ Source = "https://github.com/MeteoSwiss/eccodes-cosmo-resources-python"
 [tool.hatch.version]
 path = "src/eccodes_cosmo_resources/__about__.py"
 
-[tool.hatch.build]
-include = [
-  "src/eccodes_cosmo_resources/*.py",
-  "definitions/",
-]
-sources = ["src"]
+[tool.hatch.build.targets.wheel]
+packages = ["src/eccodes_cosmo_resources"]
