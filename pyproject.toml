@@ -37,4 +37,4 @@ path = "src/eccodes_cosmo_resources/__about__.py"
 packages = ["src/eccodes_cosmo_resources"]
 
 [tool.hatch.build.targets.wheel.shared-data]
-"eccodes-cosmo-resources/defintions" = "share/eccodes-cosmo-resources/defintions"
+"eccodes-cosmo-resources" = "share/eccodes-cosmo-resources"

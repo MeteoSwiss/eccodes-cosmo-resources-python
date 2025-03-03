@@ -1,6 +1,7 @@
+import sysconfig
 from pathlib import Path
 
 
 def get_definitions_path() -> Path:
-    here = Path(__file__)
-    return here / "eccodes-cosmo-resources/definitions"
+    root = Path(sysconfig.get_path("data"))
+    return root / "share/eccodes-cosmo-resources/definitions"
