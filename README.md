@@ -10,3 +10,14 @@
 ```console
 pip install eccodes-cosmo-resources-python
 ```
+
+## Usage
+
+```python
+import eccodes
+import eccodes_cosmo_resources
+
+vendor = eccodes.codes_definition_path()
+cosmo = eccodes_cosmo_resources.get_definitions_path()
+eccodes.set_definition_path(f"{cosmo}:{vendor}")
+```
