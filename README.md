@@ -24,4 +24,4 @@ eccodes.set_definition_path(f"{cosmo}:{vendor}")
 
 ## Credits
 
-The eccodes_definitions.edzw on https://opendata.dwd.de are provided under the CC BY 4.0 license (https://creativecommons.org/licenses/by/4.0/) and the attribution rules apply if you use it (e.g. https://wiki.creativecommons.org/wiki/License_Versions#Attribution_reasonable_to_means.2C_medium.2C_and_context ); the owner is the DWD.
+The eccodes_definitions.edzw on https://opendata.dwd.de are provided under the [CC BY 4.0 license](https://creativecommons.org/licenses/by/4.0/) and the [attribution rules](https://wiki.creativecommons.org/wiki/License_Versions#Attribution_reasonable_to_means.2C_medium.2C_and_context) apply if you use it; the owner is the German Meteorological Service (DWD).
