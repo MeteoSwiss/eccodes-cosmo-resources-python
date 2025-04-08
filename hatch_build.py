@@ -17,7 +17,7 @@ def common_root(names: list[str], abort: Callable[[str], None]) -> str:
             continue
         current, *_ = Path(name).parts
         if current != common:
-            raise ValueError("non matching root")
+            abort("tarfile has non matching root in names")
     return common
 
 
@@ -31,7 +31,7 @@ def unpack_definitions(abort: Callable[[str], None]) -> str:
     with tarfile.open(path, "r:bz2") as tar:
         root = common_root(tar.getnames(), abort)
         if not root.startswith("definitions"):
-            abort("")
+            abort("tarfile root does not start with definitions")
         tar.extractall(filter="data")
     try:
         yield root
