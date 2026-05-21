@@ -27,7 +27,7 @@ def unpack_definitions(abort: Callable[[str], None]) -> str:
         yield str(root / "definitions")
         return
 
-    [path] = Path(".").glob("eccodes_definitions*.tar.bz2")
+    [path] = Path(".").glob("definitions*.tar.bz2")
     with tarfile.open(path, "r:bz2") as tar:
         root = common_root(tar.getnames(), abort)
         if not root.startswith("definitions"):
